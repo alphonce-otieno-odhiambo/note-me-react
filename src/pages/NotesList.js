@@ -13,7 +13,8 @@ const NotesList = () => {
 
     const getNotes = async () => {
         const response = await fetch('http://127.0.0.1:8000/api/notes/');
-        const data = response.json()
+        const data = response.json();
+        setNotes(data);
     }
     
   return (
